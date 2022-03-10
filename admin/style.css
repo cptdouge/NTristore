@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+}
+:root{
+    --c1:#112031;
+    --c2:#152D35;
+    --c3:#345B63;
+    --c4:rgb(127, 178, 182);
+    --c5:#D4ECDD;
+
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--c5);
+    
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+.navbar-brand{
+    width: 300px;
+    text-align:  center;
+    background: rgb(59, 59, 59);
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.fas{
+    color: whitesmoke;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.fas:hover{
+    color: rgb(128, 126, 126);
+}
+h4,h3{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.footer{
+    display: block;
+    background-color: black;
+    height: 30px;
+    line-height: 20px;
+    color:white;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    bottom:0;
+    top: 15px;
+    opacity: 0.5;
+    margin: 0;
+}
+.footer p{
+    line-height: 30px;
+    color:var(--c5);
+    margin: 0;
+    text-align: center;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--c4);
+    width: 100%;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.head h3{
+    font-weight: 800;
+}
+.menubar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: 100%;
+
+}
+.nav-link:hover{
+    color:var(--c3)!important;
+}
+#navitems{
+    margin-left:100px;
+}
+.main{
+    width: 1200px;
+}
+
+
+.submit_btn{
+    margin-top: 15px;
+    background: var(--c1);
+    color: var(--c5);
+    line-height: 30px;
+    padding:3px 5px;
+}
+.submit_btn:hover{
+    background: var(--c3);
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    align-items: flex-start;
+    gap: 10px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--c3);
+    
+}
+::-webkit-scrollbar-thumb{
+    background: var(--c4);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--c2);
+}

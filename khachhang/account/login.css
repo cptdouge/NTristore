@@ -1,0 +1,117 @@
+:root{
+    --c1:#112031;
+    --c2:#152D35;
+    --c3:#345B63;
+    --c4:rgb(127, 178, 182);
+    --c5:#D4ECDD;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+form{
+    max-width: 550px; 
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--c1);
+    color: var(--c5);
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(var(--c3),var(--c5));
+    line-height: 20px;
+
+}
+h1{
+    text-align: center;
+    color:var(--c5)
+    
+}
+form .input-box{
+    display: block;
+    align-items: center;
+    
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.input-box input{
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    padding: 0 10px;
+    background: var(--c5);
+
+}
+.input-box input.text{
+    width: 50%;
+    height: 30px;
+}
+.input-box input.button{
+    width: 150px;
+    background: cadetblue;
+    color: var(--c5);
+    border:0;
+    padding:5px 10px;
+    cursor:pointer;
+    margin:3px 200px
+    
+}
+.input-box input.button:hover{
+    color: #112031;
+}
+label{
+    display: inline-block;
+    padding: 3px 6px;
+    text-align: right;
+    width: 170px;
+
+}
+.text{
+    margin-bottom: 15px;
+}
+
+.form{
+    box-shadow: 30px 20px 20px 0 rgb(44, 44, 44);
+}
+.home_button{
+    background: linear-gradient(to right,var(--c5),var(--c4));
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    padding:20px;
+    border: 3px solid var(--c1);
+    border-radius: 15px;
+    box-shadow: 0px 3px 8px black ;
+    transition:0.5s all ease;
+}
+.home_button:hover{
+    box-shadow: 0px 15px 28px black ;
+}
+.home_button a{
+    text-decoration: none;
+    color: var(--c1);
+}
+.home_button a:hover{
+    color: var(--c1);
+}
