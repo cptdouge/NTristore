@@ -1,3 +1,4 @@
+var checkuser = false;
 var check = false;
 function checkusername(str){
     var xmlhttp = new XMLHttpRequest();
@@ -5,8 +6,8 @@ function checkusername(str){
         if (this.readyState == 4 && this.status == 200) {
 
             if (this.responseText !== '') {
-                check = false;
-            } else check = true;
+                checkuser = false;
+            } else checkuser = true;
         }
         document.getElementById('alert').innerText = this.responseText;
     }
@@ -16,13 +17,14 @@ function checkusername(str){
 
 
 function formcheck(){
+
     var id =document.getElementById("username").value;
     var pwd = document.getElementById("pwd").value;
     var confirmpwd = document.getElementById("confirmpwd").value;
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var phone = document.getElementById("phone").value;
-    var address = document.getElementById("address");
+    var address = document.getElementById("address").value;
 
     let pwdpattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/;
     let emailpattern = /.*@gmail.com/;
@@ -30,7 +32,7 @@ function formcheck(){
 
 
     if(id == "" || pwd == "" || confirmpwd == "" || name == ""||
-    email == ""|| phone == ""|| address==""){
+    email == ""|| phone == ""|| address == ""){
         alert("Vui lòng nhập đầy đủ thông tin!");
         return check;
     }
@@ -52,6 +54,9 @@ function formcheck(){
     }
     else if(!phone.match(phonepattern)){
         alert("Số điện thoại phải có 10-12 kí số!");
+        return check;
+    }
+    else if(checkuser==false){
         return check;
     }
     else{

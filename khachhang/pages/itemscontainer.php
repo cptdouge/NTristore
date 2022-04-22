@@ -1,5 +1,6 @@
 <div id= "main_content">
     <?php
+        
         if(isset($_GET['quanly'])){
             $temp = $_GET['quanly'];
         }else{
@@ -15,6 +16,10 @@
             include("main/lienhe.php");
         }elseif($temp == 'sanpham'){
             include("main/sanpham.php");
+        }elseif($temp == 'thanhtoan'){
+            include("main/thanhtoan.php");
+        }elseif($temp == 'taikhoan'){
+            include("main/taikhoan.php");
         }else{
             include("main/index.php");
         }

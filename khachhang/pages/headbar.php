@@ -3,7 +3,7 @@
         <div id= "logo"><a href="index.php"><img src="../img/web_logo.png" id="web_logo" alt="web_logo"  href="index.php"></a></div>
         <?php
         if(isset($user)){
-            echo '<div class = "acc_info"><p>Xin chào ' .$user. ' </p>
+            echo '<div class = "acc_info"><p>Xin chào <a href="index.php?quanly=taikhoan">' .$user. ' </a><p>
             <a class = "logout" href="./account/logout.php">Đăng xuất</a> </div> ';
             
         }else{

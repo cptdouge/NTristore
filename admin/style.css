@@ -12,11 +12,14 @@
     --c3:#345B63;
     --c4:rgb(127, 178, 182);
     --c5:#D4ECDD;
+    --c6:#ffff;
 
 }
+
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: var(--c5);
+    min-height: 100vh;
+    background: linear-gradient( to bottom right,var(--c6),var(--c5),var(--c4));;
     
 }
 .wrapper{
@@ -27,6 +30,7 @@ body{
     justify-content: center;
     align-items: center;
 
+
 }
 .navbar-brand{
     width: 300px;
@@ -36,6 +40,8 @@ body{
     margin-left: auto;
     -webkit-user-select: none;
     user-select: none;
+    color: white!important;
+    background-color: var(--c3);
 }
 .fas{
     color: whitesmoke;
@@ -49,18 +55,47 @@ h4,h3{
     margin-top: 50px;
     margin-bottom: 20px;
 }
+table tbody tr {
+    vertical-align: middle;
+    height: 150px;
+}
+
+#table-container{
+    min-width: 1200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#table-scroll {
+    max-height:800px;
+    overflow:auto;  
+    width: 100%;
+    
+}
+#table-container table{
+    width: 100%;
+    border: none;
+}
+
+table thead th{
+    position: sticky;
+    top: 0;
+    height: 30px;
+    z-index: 2;
+}
 .footer{
     display: block;
-    background-color: black;
-    height: 30px;
-    line-height: 20px;
-    color:white;
-    width: 100%;
-    position: relative;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    background: var(--c3);
     z-index: 10;
+    width: 100%;
+    top: 100%;
     bottom:0;
-    top: 15px;
-    opacity: 0.5;
+    opacity: 0.8;
     margin: 0;
 }
 .footer p{
@@ -88,6 +123,19 @@ h4,h3{
     justify-content: center;
     align-items: center;
 }
+.acc_info{
+    display: flex;
+    text-align: inherit;
+    margin-right: 5px;
+    min-width: 300px ;
+}
+.acc_info p{
+    color: white;
+    margin:0 10px;
+}
+.acc_info a{
+    margin: 0 10px;
+}
 nav{
     width: 100%;
 
@@ -101,14 +149,23 @@ nav{
 .main{
     width: 1200px;
 }
+#btn-xoa,
+#btn-sua{
+padding: 3px;
+left: 2px;
+}
+
+
 
 
 .submit_btn{
-    margin-top: 15px;
+    margin-block: 15px;
+    margin-inline: auto;
     background: var(--c1);
     color: var(--c5);
     line-height: 30px;
     padding:3px 5px;
+
 }
 .submit_btn:hover{
     background: var(--c3);
@@ -133,4 +190,22 @@ nav{
 }
 ::-webkit-scrollbar-thumb:hover{
     background: var(--c2);
+}
+.table-wrapper{
+    width: 1200px;
+    max-height: 1000px;
+}
+.table-responsive{
+    max-height: 800px;
+    margin-block: 40px;
+}
+.table-responsive table tbody tr{
+    height: 100px;
+}
+.table-responsive table tbody tr td{
+    vertical-align: middle;
+}
+.form{
+    display: flex;
+    flex-direction: column;
 }

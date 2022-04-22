@@ -21,6 +21,9 @@
         }elseif($temp == 'quanlysp' && $query=='sua'){
             include("modules/quanlysp/sua.php");
 
+        }elseif($temp == 'quanlydonhang' && $query=='quanly'){
+            include("modules/quanlydonhang/quanly.php");
+
         }else{
             include("modules/dashboard.php");
         }

@@ -43,6 +43,8 @@ h1{
 form .input-box{
     display: block;
     align-items: center;
+    
+
 }
 .container{
     display: flex;
@@ -52,21 +54,13 @@ form .input-box{
     width: 100%;
     height: 100%;
 }
-.input-box input,
-.text{
+.input-box input{
     outline: none;
     border: 0;
     border-radius: 5px;
     padding: 0 10px;
     background: var(--c5);
-}
-#address{
-    width: 50%;
-}
-#alert{
-    text-align: center;
-    font-weight: 700;
-    color: rgb(197, 0, 0);
+
 }
 .input-box input.text{
     width: 50%;
@@ -90,7 +84,6 @@ label{
     padding: 3px 6px;
     text-align: right;
     width: 170px;
-    
 
 }
 .text{
@@ -118,9 +111,7 @@ label{
 .home_button a{
     text-decoration: none;
     color: var(--c1);
-    font-weight: 700;
 }
 .home_button a:hover{
     color: var(--c1);
-
 }
